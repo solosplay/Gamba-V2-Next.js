@@ -36,7 +36,7 @@ To get started with the Gamba Demo, follow these steps:
 
    ```bash
    ### Web3 connection
-   NEXT_PUBLIC_RPC_ENDPOINT="<HELIUS API KEY>"
+   NEXT_PUBLIC_RPC_ENDPOINT="HTTPS://<HELIUS API URL>"
    ### Creator address
    NEXT_PUBLIC_PLATFORM_CREATOR="<SOLANA WALLET ADDRESS>"
    ```
