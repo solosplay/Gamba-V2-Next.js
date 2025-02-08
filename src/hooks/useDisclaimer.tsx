@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { GambaUi } from "gamba-react-ui-v2";
-import { Modal } from "@/components/ui/Modal";
+import { Modal } from "@/components/Modal";
 import { useUserStore } from "./useUserStore";
 
 export function useDisclaimer() {

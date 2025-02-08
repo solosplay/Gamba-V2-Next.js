@@ -4,7 +4,7 @@ import { FOOTER_LINKS, FOOTER_TWITTER_LINK } from "../../constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-blue-800 to-purple-800 rounded-t-2xl shadow-t-3xl">
+    <footer className="bg-background border border-b-0 rounded-t-2xl shadow-t-3xl">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a

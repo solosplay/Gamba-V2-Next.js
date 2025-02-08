@@ -1,12 +1,12 @@
-// src/games/Flip/index.tsx
 import { BannerWithMessages, FlipBanner } from "./FlipBanner";
+// src/games/Flip/index.tsx
 import { GambaUi, useCurrentToken, useSound } from "gamba-react-ui-v2";
-import React, { FC, Suspense, useEffect, useState } from "react";
+import { Suspense, useState } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { Coin } from "./Coin";
 import { Effect } from "./Effect";
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import { Text } from "@react-three/drei";
 import { toast } from "sonner";
 import { useGamba } from "gamba-react-v2";

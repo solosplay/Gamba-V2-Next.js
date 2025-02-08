@@ -32,12 +32,12 @@ import {
   StarsLayer8,
   StarsLayer9,
 } from "./styles";
-import React, { useState } from "react";
 
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import Slider from "./slide";
 import { toast } from "sonner";
 import { useGamba } from "gamba-react-v2";
+import { useState } from "react";
 
 const CrashGame = () => {
   const [wager, setWager] = useWagerInput();

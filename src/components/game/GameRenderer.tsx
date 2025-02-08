@@ -1,8 +1,8 @@
 // src/components/sections/Game/Game.tsx
 
+import { FC, useEffect, useMemo, useState } from "react";
 import { FaStar, FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import { GambaUi, useSoundStore } from "gamba-react-ui-v2";
-import React, { FC, useEffect, useMemo, useState } from "react";
 import { decodeGame, getGameAddress } from "gamba-core-v2";
 import {
   useAccount,
@@ -12,8 +12,8 @@ import {
 
 import { GAMES } from "@/games";
 import { GameCard } from "@/components/game/GameCard";
-import { Icon } from "@/components/ui/Icon";
-import { Modal } from "@/components/ui/Modal";
+import { Icon } from "@/components/Icon";
+import { Modal } from "@/components/Modal";
 import { ProvablyFairModal } from "./ProvablyFairModal";
 import { toast } from "sonner";
 import { useUserStore } from "@/hooks/useUserStore";

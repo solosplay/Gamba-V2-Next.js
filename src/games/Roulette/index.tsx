@@ -17,8 +17,7 @@ import {
 } from "./signals";
 
 import { Chip } from "./Chip";
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
-import React from "react";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import { StyledResults } from "./Roulette.styles";
 import { Table } from "./Table";
 import { computed } from "@preact/signals-react";

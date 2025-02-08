@@ -8,10 +8,10 @@ import {
   useSound,
   useWagerInput,
 } from "gamba-react-ui-v2";
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import { BPS_PER_WHOLE } from "gamba-core-v2";
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import Slider from "./slide";
 import { toast } from "sonner";
 import { useGamba } from "gamba-react-v2";

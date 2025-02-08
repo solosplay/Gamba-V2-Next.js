@@ -1,28 +1,27 @@
 // src/pages/index.tsx
-import { GambaButton } from "@/components/ui/GambaPlayButton";
 import { GameGrid } from "@/components/game/GameGrid";
 import { PLATFORM_REFERRAL_FEE } from "@/constants";
 import RecentPlays from "@/components/game/RecentPlays/RecentPlays";
 import { toast } from "sonner";
+import { useReferral } from "gamba-react-ui-v2";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 export default function HomePage() {
   const walletModal = useWalletModal();
   const wallet = useWallet();
+  const { copyLinkToClipboard } = useReferral();
 
-  const copyInvite = () => {
+  const handleCopyInvite = () => {
     if (!wallet.publicKey) {
       return walletModal.setVisible(true);
     }
-    const referralLink = `${location.host}?code=${wallet.publicKey.toString()}`;
-    navigator.clipboard.writeText(referralLink);
+    copyLinkToClipboard();
     toast.success(
-      `Copied! Share your link to earn a ${
-        PLATFORM_REFERRAL_FEE * 100
-      }% fee when players use this platform`,
+      `Copied! Share your link to earn a ${PLATFORM_REFERRAL_FEE * 100}% fee when players use this platform`,
     );
   };
+
   return (
     <>
       <div className="relative mx-auto flex flex-col gap-5 mt-20 pb-10 px-2.5 transition-all duration-250 ease-in-out sm:px-5 sm:pt-5 md:max-w-6xl">
@@ -62,7 +61,7 @@ export default function HomePage() {
             </p>
             <button
               className="bg-[#8851ff] hover:bg-[#9564ff] rounded-lg p-2 text-xs bg-"
-              onClick={copyInvite}
+              onClick={handleCopyInvite}
             >
               Copy Link
             </button>

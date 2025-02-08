@@ -1,12 +1,12 @@
 // src/components/sections/Game/ProvablyFairModal.tsx
 
 import { GambaPlatformContext, GambaUi } from "gamba-react-ui-v2";
-import React, { useContext } from "react";
 import { useGamba, useGambaProgram, useSendTransaction } from "gamba-react-v2";
 
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
-import { Icon } from "@/components/ui/Icon";
-import { Modal } from "@/components/ui/Modal";
+import GambaPlayButton from "@/components/GambaPlayButton";
+import { Icon } from "@/components/Icon";
+import { Modal } from "@/components/Modal";
+import { useContext } from "react";
 
 export function ProvablyFairModal(props: { onClose: () => void }) {
   const gamba = useGamba();

@@ -1,7 +1,7 @@
 // src/pages/500.tsx
 
 import { BASE_SEO_CONFIG } from "../constants";
-import { GambaButton } from "@/components/ui/GambaPlayButton";
+import { GambaButton } from "@/components/GambaPlayButton";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 

@@ -1,3 +1,4 @@
+import { DependencyList, useEffect, useMemo, useRef, useState } from "react";
 // src/games/Plinko/index.tsx
 import { GambaUi, useSound, useWagerInput } from "gamba-react-ui-v2";
 import {
@@ -9,15 +10,8 @@ import {
   barrierWidth,
   bucketHeight,
 } from "./game";
-import React, {
-  DependencyList,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
 
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import { toast } from "sonner";
 import { useGamba } from "gamba-react-v2";
 

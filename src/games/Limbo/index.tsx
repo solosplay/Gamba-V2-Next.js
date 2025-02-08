@@ -11,12 +11,12 @@ import {
   useSound,
   useWagerInput,
 } from "gamba-react-ui-v2";
-import React, { useState } from "react";
 
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import Slider from "./slide";
 import { toast } from "sonner";
 import { useGamba } from "gamba-react-v2";
+import { useState } from "react";
 
 export default function Limbo() {
   const game = GambaUi.useGame();

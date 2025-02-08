@@ -7,6 +7,7 @@ import {
   useSound,
   useWagerInput,
 } from "gamba-react-ui-v2";
+import { FC, useEffect, useMemo, useState } from "react";
 import {
   FINAL_DELAY,
   LEGENDARY_THRESHOLD,
@@ -22,10 +23,9 @@ import {
   SPIN_DELAY,
   SlotItem,
 } from "./constants";
-import React, { FC, useEffect, useMemo, useState } from "react";
 import { generateBetArray, getSlotCombination } from "./utils";
 
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import { GameResult } from "gamba-core-v2";
 import { ItemPreview } from "./ItemPreview";
 import { Slot } from "./Slot";

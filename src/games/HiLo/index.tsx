@@ -25,9 +25,9 @@ import {
   SOUND_PLAY,
   SOUND_WIN,
 } from "./constants";
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
-import GambaPlayButton from "@/components/ui/GambaPlayButton";
+import GambaPlayButton from "@/components/GambaPlayButton";
 import { toast } from "sonner";
 import { useGamba } from "gamba-react-v2";
 

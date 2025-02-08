@@ -1,11 +1,11 @@
 // src/components/sections/RecentPlays/ShareModal.tsx
 
-import React, { useRef, useState } from "react";
 import { TokenValue, useTokenMeta } from "gamba-react-ui-v2";
+import { useRef, useState } from "react";
 
-import { GambaButton } from "@/components/ui/GambaPlayButton";
+import { GambaButton } from "@/components/GambaPlayButton";
 import { GambaTransaction } from "gamba-core-v2";
-import { Modal } from "@/components/ui/Modal";
+import { Modal } from "@/components/Modal";
 import { extractMetadata } from "@/utils/RecentPlay";
 import html2canvas from "html2canvas";
 import { toast } from "sonner";
