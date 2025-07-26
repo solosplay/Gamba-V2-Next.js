@@ -26,14 +26,14 @@ export const LIVE_EVENT_TOAST = true;
  ******************************************/
 
 export const FOOTER_LINKS = [
-  {
-    href: "https://github.com/BankkRoll/Gamba-V2-Next.js",
-    title: "👨‍💻 Build your own",
-  },
-  {
-    href: "https://explorer.gamba.so/create",
-    title: "🚀 Create Pool",
-  },
+  // {
+  //   href: "https://github.com/BankkRoll/Gamba-V2-Next.js",
+  //   title: "👨‍💻 Build your own",
+  // },
+  // {
+  //   href: "https://explorer.gamba.so/create",
+  //   title: "🚀 Create Pool",
+  // },
   {
     href: "https://gamba.so/docs",
     title: "📖 Gamba Docs",
@@ -56,7 +56,7 @@ export const FOOTER_TWITTER_LINK = {
  ******************************************/
 
 export const BASE_SEO_CONFIG = {
-  defaultTitle: "Gamba - NEXTjs Demo",
+  defaultTitle: "solos.bet - No KYC, Instant Payouts.",
   description:
     "The gambleFi protocol with end-to-end tools for on-chain degeneracy on Solana.",
   openGraph: {
